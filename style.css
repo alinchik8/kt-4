@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(200, 255, 118);
+}
+a {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+h1, h2 {
+    margin: 0;
+    text-align: center;
+}
+section {
+    padding: 30px 70px;
+}
+.caption {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(circle, rgba(197, 249, 9, 0.863) ,  #222 50% , rgb(50, 165, 12)   );
+}
+h1 {
+    width: 400px;
+    color: rgb(241, 241, 241);
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+h2 {
+    width: 100%;
+}
+
+.item {
+    color: rgb(241, 241, 241);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 40%; 
+    background-image: radial-gradient( circle, rgba(197, 249, 9, 0.863) ,  #222 50% , rgb(50, 165, 12));
+}
+.img{
+    width:10px;
+}
+
+/* @media print {
+    .caption {
+        background-image: none;
+    }
+    header {
+        border-bottom: 1px solid;
+    }
+    .item {
+        outline: 1px solid;
+    } */
+    @media screen and (max-width: 539px) {
+        .caption {
+            background-image: radial-gradient(circle, rgb(239, 14, 255) 50%  ,  rgba(77, 9, 249, 0.863), rgb(26, 250, 205));
+        }
+        .item {
+            background-image: radial-gradient( circle,  rgb(239, 14, 255) 50%  ,  rgba(77, 9, 249, 0.863), rgb(26, 250, 205));
+            color: rgb(0, 0, 0);
+        }
+    }
+@media screen and (min-width: 540px) and (max-width: 992px) {
+    .caption {
+        background-image: radial-gradient(circle, rgb(6, 255, 184) 50%  ,  rgba(240, 249, 158, 0.863), rgb(122, 247, 80));
+    }
+    .item {
+        background-image: radial-gradient(circle, rgb(6, 255, 184) 50%  ,  rgba(240, 249, 158, 0.863), rgb(122, 247, 80));
+        color: rgb(0, 0, 0);
+        width: 60%;
+    }
+}
+
